@@ -3,6 +3,11 @@ function random(n) {
 }
 
 function updateContainer(squarePerSide) {
+  if (squarePerSide > 100) {
+    alert("Too much!");
+    return;
+  }
+
   const container = document.querySelector(".container");
 
   container.innerHTML = "";
